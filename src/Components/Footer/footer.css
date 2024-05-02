@@ -1,0 +1,110 @@
+/* Footer container */
+.footer {
+  width: 100%;
+  padding: 2rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+/* Video background */
+.videoDiv {
+  position: absolute;
+  height: 100%;
+  width: 100%; /* Full width */
+  z-index: -1;
+}
+
+/* Adjusted video width */
+.videoDiv video {
+  height: 100%; /* Maintain full height */
+  width: 100%; /* Set desired width (adjust as needed) */
+  -o-object-fit: cover;
+     object-fit: cover; /* Maintain aspect ratio */
+}
+
+/* Video overlay */
+.videoDiv::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(10, 84, 107, 0.5); /* Adjust overlay color and opacity */
+}
+
+/* Section content */
+.secContent {
+  width: 100%;
+  max-width: 600px; /* Adjust maximum width as needed */
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: var(--whiteColor);
+  z-index: 1;
+}
+
+/* Text styles */
+.text {
+  margin-bottom: 1rem;
+}
+
+.text small {
+  font-size: 14px;
+}
+
+.text h2 {
+  font-size: 2rem;
+}
+
+/* Input and button container */
+.inputDiv {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 100%;
+}
+
+/* Email input */
+.inputDiv input {
+  padding: 0.8rem;
+  border: 1px solid white;
+  border-radius: 3rem;
+  background-color: var(--whiteColor);
+  color: var(--whiteColor);
+  outline: none;
+  font-size: 14px;
+}
+.inputDiv input ::-moz-placeholder {
+  color: var(--whiteColor); /* Set placeholder text color to white */
+  opacity: 0.8; /* Optional: Adjust placeholder opacity */
+}
+.inputDiv input ::placeholder {
+  color: var(--whiteColor); /* Set placeholder text color to white */
+  opacity: 0.8; /* Optional: Adjust placeholder opacity */
+}
+
+/* Submit button */
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.8rem;
+  border: none;
+  border-radius: 3rem;
+  background-color: var(--primaryColor);
+  color: var(--whiteColor);
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: var(--secondaryColor);
+}/*# sourceMappingURL=footer.css.map */
